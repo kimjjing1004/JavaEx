@@ -45,19 +45,19 @@ public class EnumEx {
 		Week today = Week.TUESDAY;
 		
 		System.out.printf("Today is %s(%d)%n", 
-				today.name(),	//열거 상수의 문자열
+				today.name(),	// 열거 상수의 문자열
 				today.ordinal());	//	순번
 		
-		String dayStr = "Friday";
+		String dayStr = "FRIDAY";
 		Week other = Week.valueOf(dayStr);	//	문자열 -> 열거상수로 변환
 		
-		System.out.printf("Other is %s(%d)%n",
+		System.out.printf("Other is %s(%d)%n", 
 				other.name(),
 				other.ordinal());
 		
 		//	순번 비교
 		int diff = today.compareTo(other);
-		System.out.println("today와 other의 순번차:" + diff);		
+		System.out.println("today와 other의 순번차:" + diff);
 	}
 
 }
