@@ -8,21 +8,21 @@ public class ArrayEx {
 //		arrayCopyFor();
 		arrayCopySystem();
 	}
-	
+
 	private static void arrayCopySystem() {
 		//	System 객체를 이용한 배열의 복사
-		int source[] = {1, 2, 3 };
+		int source[] = { 1, 2, 3 };
 		int target[] = new int[10];
 		
 		System.arraycopy(source,	//	원본 배열의 식별자
-				0,	//	복사 시작 인덱스(원본 배열의)
-				target,		//	복사 대상 배열
+				0,	//	 복사 시작 인덱스(원본 배열의)
+				target, 	//	복사 대상 배열
 				3,	//	복사 시작 인덱스(대상 배열의)
 				source.length);	//	복사할 길이
 		
 		//	출력
 		for (int i = 0; i < target.length; i++) {
-			System.out.println(target[i] + "\t");
+			System.out.print(target[i] + "\t");
 		}
 		System.out.println();
 		
@@ -45,7 +45,7 @@ public class ArrayEx {
 		}
 		
 		for (int i = 0; i < target.length; i++) {
-			System.out.println(target[i] + "\t");
+			System.out.print(target[i] + "\t");
 		}
 		System.out.println();
 	}
@@ -56,7 +56,7 @@ public class ArrayEx {
 		int[][] twoDimen = new int[5][10];	//	5행 10열의 배열
 		
 		int table[][] = {
-				{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 },
+				{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 },	
 				{ 2, 3, 4, 5, 6, 7, 8, 9, 0, 1 },
 				{ 3, 4, 5, 6, 7, 8, 9, 0, 1, 2 },
 				{ 4, 5, 6, 7, 8, 9, 0, 1, 2, 3 },
@@ -72,14 +72,15 @@ public class ArrayEx {
 				System.out.print(table[row][col] + "\t");
 				total += table[row][col];
 			}
-			System.out.println("총계:" + total);
+			System.out.println();
 		}
+		System.out.println("총계:" + total);
 	}
 	
 	private static void arrayBasic() {
 		//	선언과 초기화, 사용
-		//	선언
-		String[] names; //	type[]
+		//	선언 
+		String[] names;	//	Type[]
 		int scores[];	//	식별자[]
 		
 		//	초기화
@@ -109,14 +110,14 @@ public class ArrayEx {
 		};
 		
 		for (int i = 0; i < scores.length; i++) {
-			System.out.printf("%s (%.2f) : score = %d%n",
-					names[i],
+			System.out.printf("%s (%.2f) : score = %d%n", 
+					names[i], 
 					heights[i],
 					scores[i]);
 		}
 		
 		//	주의
-		int scores2[] = scores; //	참조 복사 -> 유의
+		int scores2[] = scores;	//	참조 복사 -> 유의
 		System.out.println("scores == scores2 : " + (scores == scores2));
 		//	두 객체는 같은 객체다(같은 주소를 가리키고 있다)
 		//	scores -> 내용 확인
@@ -126,9 +127,10 @@ public class ArrayEx {
 		System.out.println();
 		//	scores2 변경
 		scores2[2] = 100;
+//		scores -> 내용 확인
 		for (int i = 0; i < scores.length; i++) {
 			System.out.print(scores[i] + "\t");
 		}
+		
 	}
-
 }
