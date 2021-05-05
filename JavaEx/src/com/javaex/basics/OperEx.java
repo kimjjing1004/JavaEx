@@ -6,8 +6,8 @@ public class OperEx {
 //		arithOperEx();
 //		logicOper();
 //		bitOper();
-		bitShift();
-//		conditionalOper();
+//		bitShift();
+		conditionalOper();
 	}
 	
 	//	3항 연산자 : 조건부 연산
@@ -19,15 +19,15 @@ public class OperEx {
 		//	조건식 ? 참일 때의 값: 거짓일 때의 값
 		message = a % 2 == 0 ? "짝수": "홀수";
 		
-		System.out.println(a + "는 " + message);
+		System.out.println(a + "은 " + message);
 		
 		int score = 40;
 		
 		//	80점 이상이면 Good
 		//		80 ~ 50 이면 Pass
 		//		그 이하면 Fail
-		message = score >= 80 ? "Good":
-							score >= 50 ? "Pass" : "Fail";
+		message = score >= 80 ? "Good": score >= 50 ? "Pass" : "Fail";
+		
 		System.out.println("점수:" + score + ", 결과:" + message);
 		
 	}
@@ -39,7 +39,7 @@ public class OperEx {
 		
 		System.out.println(data);
 		System.out.println("1비트 왼쪽 시프트:" + 
-				Integer.toBinaryString(data << 1));	
+				Integer.toBinaryString(data << 1));
 		System.out.println("4비트 왼쪽 시프트:" +
 				Integer.toBinaryString(data << 4));
 		
