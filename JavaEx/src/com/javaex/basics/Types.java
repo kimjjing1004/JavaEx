@@ -21,6 +21,9 @@ public class Types {
 		int i = 2021;	//	4바이트 정수형
 		float f = 123.456f;	//	4바이트 실수형
 		
+//		Integer.toBinaryString(int값)
+//		: 매개변수 int를 String으로 최종출력
+//		: int -> 2진수의 String
 		System.out.println(Integer.toBinaryString(i));
 		
 		b = (byte)i;	//	강제로 캐스팅
