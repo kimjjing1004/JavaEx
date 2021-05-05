@@ -6,8 +6,8 @@ public class OperEx {
 //		arithOperEx();
 //		logicOper();
 //		bitOper();
-//		bitShift();
-		conditionalOper();
+		bitShift();
+//		conditionalOper();
 	}
 	
 	//	3항 연산자 : 조건부 연산
@@ -61,10 +61,13 @@ public class OperEx {
 		
 		System.out.println("b1:" + Integer.toBinaryString(b1));
 		System.out.println("b2:" + Integer.toBinaryString(b2));
+		
 		int result = b1 & b2;	//	비트 논리 곱: 둘다 1이어야 1비트로 세팅
 		System.out.println("b1&b2:" + Integer.toBinaryString(result));
+		
 		result = b1 | b2;		//	비트 논리 합: 둘 중 한 개만 1이면 1비트 세팅
 		System.out.println("b1|b2:" + Integer.toBinaryString(result));
+		
 		result = ~b1;	//	비트 논리 부정 : 1 <-> 0
 		System.out.println("~b1:" + Integer.toBinaryString(result));
 	}
