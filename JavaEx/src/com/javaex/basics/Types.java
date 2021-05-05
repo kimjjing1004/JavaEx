@@ -10,7 +10,7 @@ public class Types {
 //		charEx();
 //		constantEx();
 //		implicitCasting();
-		explicitCasting();
+//		explicitCasting();
 	}
 	
 	//	명시적 형변환
@@ -30,9 +30,11 @@ public class Types {
 		System.out.println("float " + f + " -> int " + i);
 		
 	}
+	
 	//	암묵적 형변환
 	//	표현의 범위 좁은 자료형 -> 넓은 자료형으로 변환
 	//	명시적으로 변환하지 않아도 자바가 변환해준다
+	//	실수형이 정수형보다 표현 범위가 넓다
 	private static void implicitCasting() {
 		//	byte(1) < short(2) < int(4) < long(8)
 		//		< float(4) < double(8)
@@ -48,6 +50,7 @@ public class Types {
 		double d = f;	//	8바이트 실수형
 		System.out.println("float -> double:" + d);
 	}
+	
 	//	상수 예제
 	//	이유 1. 변경되면 안되는 값을 보호할 때
 	//	이유 2. 코드 가독성이 높아진다
@@ -81,6 +84,7 @@ public class Types {
 		System.out.println(ch1);
 		System.out.println(ch2);
 		
+		//	ASCII 코드에서 'A' = 65, 'a' = 97, '0' = 48, '\n' = 10, ' ' = 32(공백)
 		System.out.println(ch1 + ch2);
 		
 		//	문자열은 쌍따옴표로(")
@@ -113,7 +117,7 @@ public class Types {
 		System.out.println("floatVar:" + floatVar);
 		System.out.println("doubleVar:" + doubleVar);
 		
-		//	지수 표기법 m * 10의 n승 
+		//	지수 표기법 m * 10의 n승
 		int intVar = 3000000;
 		floatVar = 3E6F;	//	3.0 * 10 ^ 6
 		doubleVar = 3E-6;	//	3.0 * 10 ^ -6
