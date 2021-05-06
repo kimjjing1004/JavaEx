@@ -18,8 +18,11 @@ public class ConditionalEx {
 		//	-> 오타 발생 가능, 원하지 않는 입력이 넘어오는 경우가 있다
 		//	코드의 집합을 별도 선언, 입력 값을 제한해야 한다
 		//	-> TODO: enum 열거형으로 재작성을 해 볼 것
-		String day = "MONDAY";
+		Scanner scanner = new Scanner(System.in);
 		String act = "";
+
+		System.out.println("오늘은 무슨 요일 입니까? ");		
+		String day = scanner.next();
 		
 		//	MONDAY ~ THURSDAY : act <- 열공
 		//	FRIDAY : act <- 불금
