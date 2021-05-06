@@ -8,11 +8,11 @@ public class LoopEx {
 //		whileEx();
 //		whileGugu();
 //		whileInfinity();
-//		doWhileEx();
+		doWhileEx();
 //		forLoopEx();
 //		continueEx();
 //		breakEx();
-		randomEx();
+//		randomEx();
 	}
 	
 	private static void randomEx() {
