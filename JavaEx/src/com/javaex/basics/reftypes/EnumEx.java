@@ -3,13 +3,13 @@ package com.javaex.basics.reftypes;
 public class EnumEx {
 
 	public static void main(String[] args) {
-//		enumBasic();
-		enumEx();
+		enumBasic();
+//		enumEx();
 	}
 	
 	private static void enumEx() {
 		//	ConditionalEx.switchEx3() -> enum 버전
-		Week today = Week.TUESDAY;
+		Week today = Week.MONDAY;
 		String act = "";
 		
 		//	MONDAY ~ THURSDAY : act <- 열공
