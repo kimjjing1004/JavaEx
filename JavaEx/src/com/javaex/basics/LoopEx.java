@@ -8,11 +8,11 @@ public class LoopEx {
 //		whileEx();
 //		whileGugu();
 //		whileInfinity();
-		doWhileEx();
+//		doWhileEx();
 //		forLoopEx();
 //		continueEx();
 //		breakEx();
-//		randomEx();
+		randomEx();
 	}
 	
 	private static void randomEx() {
@@ -52,7 +52,8 @@ public class LoopEx {
 	private static void continueEx() {
 		//	1 ~ 20 수 중 2의 배수, 3의 배수를 제외한 나머지를 출력
 		for (int i = 1; i <= 20; i++) {
-			if (i % 2 == 0 || i % 3 == 0) continue;	
+			if (i % 2 == 0 || i % 3 == 0)
+				continue;	
 //			2의 배수, 3의 배수면 아래 코드는 수행되지 않고 다음번 루프를 수행
 			System.out.println(i);
 		}
