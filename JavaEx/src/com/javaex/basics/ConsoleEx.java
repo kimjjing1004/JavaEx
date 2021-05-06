@@ -11,7 +11,7 @@ public class ConsoleEx {
 	}
 
 	private static void consoleInputEx() {
-		//	팁1. Ctrl + Shift + O
+		//	팁1. Ctrl + Shift + O 
 		//	팁2. 자동 완성 기능 활용 : Ctrl + Space
 		Scanner scanner = new Scanner(System.in);	//	표준 입력으로부터 데이터 입력
 		
