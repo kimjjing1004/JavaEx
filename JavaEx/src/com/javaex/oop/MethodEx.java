@@ -10,9 +10,7 @@ public class MethodEx {
 		printDivide(7, 3);
 		printDivide(7, 0);
 		
-		System.out.println(getSumArr(new double[] {
-			1, 2, 3, 4, 5, 6, 7, 8, 9, 10	
-		}));
+		System.out.println(getSumArr(new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }));
 		
 		System.out.println(getSum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 		printSum("합계:", 1, 2, 3, 4, 5, 6, 7, 8, 9);
