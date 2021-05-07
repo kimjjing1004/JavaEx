@@ -80,7 +80,7 @@ public class ArrayEx {
 	private static void arrayBasic() {
 		// 선언과 초기화, 사용
 		// 선언
-		String[] names; // Type[]
+		String[] names; // Type[] //String name[];
 		int scores[]; // 식별자[]
 
 		// 초기화
