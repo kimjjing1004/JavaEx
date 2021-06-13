@@ -3,8 +3,8 @@ package com.javaex.bank;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class AppMain {
-	private static Account[] accountArray = new Account[100];
+public class BankApplication {
+	private static BankAccount[] accountArray = new BankAccount[100];
 	private static Scanner scan = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -68,7 +68,7 @@ public class AppMain {
 		int initial = scan.nextInt();
 		System.out.println();
 		
-		Account NewAccount = new Account(num, owner, initial);
+		BankAccount NewAccount = new BankAccount(num, owner, initial);
 		for (int i = 0; i < accountArray.length; i++) {
 			if (accountArray[i] == null) {
 				accountArray[i] = NewAccount;
@@ -85,7 +85,7 @@ public class AppMain {
 		System.out.println("***********");
 		System.out.println();
 		for (int i = 0; i < accountArray.length; i++) {
-			Account AccountEx = accountArray[i];
+			BankAccount AccountEx = accountArray[i];
 			if (AccountEx != null) {
 				System.out.println(AccountEx.getNum());
 				System.out.println(AccountEx.getOwner());
@@ -110,7 +110,7 @@ public class AppMain {
 		System.out.print("예금액: ");
 		int amount = scan.nextInt();
 		
-		Account AccountEx = findAccount(num);
+		BankAccount AccountEx = findAccount(num);
 		if (AccountEx == null) {
 			System.out.println("계좌가 없습니다!");
 		}
@@ -139,7 +139,7 @@ public class AppMain {
 		System.out.print("출금액: ");
 		int amount = scan.nextInt();
 		
-		Account AccountEx = findAccount(num);
+		BankAccount AccountEx = findAccount(num);
 		if (AccountEx == null) {
 			System.out.println("계좌가 없습니다!");
 		}
@@ -153,8 +153,8 @@ public class AppMain {
 		System.out.println();
 	}
 	
-	private static Account findAccount(String num) {
-		Account AccountEx = null;
+	private static BankAccount findAccount(String num) {
+		BankAccount AccountEx = null;
 		for (int i = 0; i < accountArray.length; i++) {
 			String dbnum = accountArray[i].getNum();
 			if (dbnum.equals(num)) {

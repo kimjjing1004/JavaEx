@@ -1,11 +1,11 @@
 package com.javaex.bank;
 
-public class Account {
+public class BankAccount {
 	private String num;
 	private String owner;
 	private int initial;
 	
-	public Account(String num, String owner, int initial) {
+	public BankAccount(String num, String owner, int initial) {
 		this.num = num;
 		this.owner = owner;
 		this.initial = initial;
